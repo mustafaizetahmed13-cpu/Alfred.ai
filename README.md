@@ -1,7 +1,18 @@
-# A.L.F.R.E.D. v1.0
+# A.L.F.R.E.D. 2.0 — Ultimate Edition
 
-Upload all files in this folder to the root of your GitHub repository and keep GitHub Pages set to `main` / `/ (root)`.
+## Installation / GitHub Pages
+Upload the seven files in this folder to the root of the existing GitHub repository, replacing files with the same names. Keep the repository and GitHub Pages settings unchanged.
 
-Features: responsive cyan HUD, animated core, clock/date, network and battery indicators where supported, weather via Open-Meteo/geolocation, browser speech recognition where supported, Android/browser text-to-speech, local demo chat, PWA manifest and service worker.
+## Included now
+- Responsive futuristic multi-page interface
+- Dashboard, Chat, Tasks, Notes, Tools, System, Settings
+- Local task and note storage in browser localStorage
+- German browser text-to-speech with selectable installed German voices
+- Browser speech recognition where supported
+- Clock, battery/network indicators where browser exposes them
+- Geolocation-based current weather through Open-Meteo
+- Calculator, basic offline word examples, stopwatch
+- PWA manifest and service worker with versioned cache
 
-IMPORTANT: Chat is a local demonstration, not a connected LLM. Real AI requires a secure backend. Never place API keys in frontend code or a public GitHub repository. Voice options depend on voices installed on the Android device and browser support.
+## Important limitations
+The chat is currently a local demo, not a connected AI model. For a real AI assistant, add a secure backend/serverless function and keep API keys on the server only. Never place provider API keys in this public repository or frontend JavaScript. Background wake-word listening and arbitrary Android device control are not available to an ordinary web app/PWA; those require native Android development and explicit permissions. Voice selection depends on voices installed on the device/browser.

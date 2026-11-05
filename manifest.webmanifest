@@ -1,19 +1,21 @@
 {
-  "name": "A.L.F.R.E.D. Personal Assistant",
-  "short_name": "A.L.F.R.E.D.",
+  "name": "A.L.F.R.E.D. — Ultimate Edition",
+  "short_name": "Alfred",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#050b12",
-  "theme_color": "#050b12",
+  "orientation": "portrait",
+  "background_color": "#050a12",
+  "theme_color": "#050a12",
+  "description": "Ihr persönlicher digitaler Butler",
   "icons": [
     {
-      "src": "./icon-192.png",
+      "src": "icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "./icon-512.png",
+      "src": "icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
