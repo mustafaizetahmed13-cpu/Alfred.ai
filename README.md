@@ -21,3 +21,11 @@
 - Browser-PWAs können keine beliebigen Android-Systemfunktionen steuern, keine Apps im Hintergrund überwachen und keinen vollständigen Virenscan durchführen.
 - Die 3D-Weltkugel ist eine animierte Visualisierung, keine Live-Satellitenkarte.
 - Stimme und Spracheingabe hängen von den auf Android installierten Stimmen und Browser-APIs ab.
+
+
+## Fake-Zerstörungsmodus 5.3
+- Fiktive DEFCON-Stufen 5 bis 1 mit zunehmender Reaktor-Überlastungsanimation.
+- Alarmton und deutsche Sprachansagen (abhängig von Browser-/Geräteunterstützung).
+- Deaktivierungscode: vom Nutzer festgelegt; Code wird nur lokal im App-Code geprüft.
+- Erfolgreiche Deaktivierung oder Ablauf führt in eine grün/türkise Systemwiederherstellung.
+- Reine visuelle Simulation: keine Lösch-, Geräte-, Netzwerk- oder Systemaktionen.
