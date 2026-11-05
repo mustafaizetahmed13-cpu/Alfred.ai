@@ -1,12 +1,12 @@
 {
-  "name": "A.L.F.R.E.D. 6.0 — Beyond Intelligence",
-  "short_name": "Alfred 6",
+  "name": "A.L.F.R.E.D. 6.1 — Command HUD",
+  "short_name": "Alfred 6.1",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#02060d",
-  "theme_color": "#02060d",
+  "background_color": "#020914",
+  "theme_color": "#020914",
   "description": "Futuristisches persönliches Assistenzsystem",
   "icons": [
     {
