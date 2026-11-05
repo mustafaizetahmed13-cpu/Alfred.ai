@@ -1,23 +1,23 @@
-# A.L.F.R.E.D. v4.0 – Ultimate Assistant
+# A.L.F.R.E.D. 5.0 – Ultimate Intelligence System
+
+## Installation / Update
+1. Entpacke das ZIP.
+2. Ersetze im GitHub-Repository alle bisherigen Dateien durch die Dateien aus diesem Paket.
+3. Committe die Änderungen auf `main` im Root-Verzeichnis.
+4. Öffne die installierte App nach dem Deployment vollständig neu. Falls alte Dateien angezeigt werden: Chrome > Website-Einstellungen > Speicherinhalt leeren oder die PWA schließen und erneut öffnen.
 
 ## Enthalten
-- Futuristische Oberfläche, Reaktor, Hologramm-Scanner-Visualisierung und UI-Sounds
-- Uhr mit Sekunden
-- Wetter: nach einmaliger Standortfreigabe werden Koordinaten lokal gespeichert und bei späteren Starts erneut verwendet; Standort kann über Browser-Berechtigungen zurückgesetzt werden
-- Übersetzer mit Sprachauswahl und Online-Anfrage an MyMemory (Internet und Dienstverfügbarkeit nötig; nicht jede Sprache/Kombination garantiert)
-- Sprachsynthese: wählt bevorzugt verfügbare deutsche Stimmen; echte Stimme hängt von Android/Chrome und installierten Sprachpaketen ab
-- Chat kann optional ein eigenes KI-Backend ansprechen
-- Aufgaben, Notizen, Rechner, Stoppuhr und Systemstatus
+- Cinematische Startsequenz und animierte futuristische Oberfläche
+- Sprach- und Soundeffekte (Browser-/Gerätefähigkeiten abhängig)
+- Scanner-Modi: Umgebung, System, Radar, Dokument, Sicherheit, Objekt
+- Kameraaufnahme; echte Bildbeschreibung benötigt ein kompatibles Vision-Backend
+- Betriebsmodi, Kommandozentrale, Aufgaben, Notizen, Rechner, Übersetzer, Stoppuhr
+- lokale Finanzübersicht, Terminplanung, Konstruktionsnotizen, Forschungs-Websuche
+- Autopilot-Planung mit lokalem Fallback oder optionalem KI-Backend
 
-## Wichtig zur KI
-Diese ZIP enthält die Frontend-Unterstützung, aber noch kein tatsächlich gehostetes KI-Gehirn. In Einstellungen/System kann eine HTTPS-Backend-Adresse eingetragen werden. Das Backend muss POST-JSON `{"message":"..."}` akzeptieren und JSON mit `reply` (oder `message`/`content`) zurückgeben. Der API-Schlüssel muss ausschließlich auf dem Backend liegen – niemals in `index.html`, GitHub Pages oder einem öffentlichen Repository. Ohne eigenes Backend bleibt der Chat bei lokalen Demo-Antworten.
-
-## Sicherheit und Grenzen
-- MyMemory-Übersetzung ist ein externer kostenloser Dienst mit Nutzungs-/Verfügbarkeitsgrenzen; dies ist keine professionelle zertifizierte Übersetzung.
-- Wetter nutzt Open-Meteo. Die Standortkoordinaten werden lokal in diesem Browser gespeichert.
-- Browser-Stimmen sind keine frei austauschbare Studio-KI-Stimme. Eine hochwertige Cloud-Stimme braucht einen sicheren Sprachdienst/Backend.
-- Scanner ist eine rein visuelle Animation und scannt nicht Kamera oder Umgebung.
-- PWA kann keine uneingeschränkte Android-Systemsteuerung oder dauerhafte Wake-Word-Erkennung leisten.
-
-## GitHub Pages aktualisieren
-Alle Dateien im Paket in den Repository-Root hochladen/ersetzen. Besonders `index.html`, `sw.js`, `manifest.webmanifest` und Icons. Danach Commit Changes. Neue Cache-Version `alfred-v4-ultimate-brain` erzwingt den Wechsel auf den neuen App-Cache.
+## Technische Grenzen
+- Echte KI-Antworten, Vision-/OCR-Erkennung und intelligente Autopilot-Planung benötigen ein sicheres HTTPS-Backend. Das Backend muss die JSON-Aufgaben `message`, `vision` und `plan` unterstützen.
+- Kein API-Schlüssel in öffentliche Frontend-Dateien eintragen.
+- Browser-PWAs können keine beliebigen Android-Systemfunktionen steuern, keine Apps im Hintergrund überwachen und keinen vollständigen Virenscan durchführen.
+- Die 3D-Weltkugel ist eine animierte Visualisierung, keine Live-Satellitenkarte.
+- Stimme und Spracheingabe hängen von den auf Android installierten Stimmen und Browser-APIs ab.
