@@ -1,13 +1,13 @@
 {
-  "name": "A.L.F.R.E.D. 5.2 — Ultimate Intelligence System",
-  "short_name": "Alfred",
+  "name": "A.L.F.R.E.D. 6.0 — Beyond Intelligence",
+  "short_name": "Alfred 6",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#050a12",
-  "theme_color": "#050a12",
-  "description": "Ihr persönlicher digitaler Butler",
+  "background_color": "#02060d",
+  "theme_color": "#02060d",
+  "description": "Futuristisches persönliches Assistenzsystem",
   "icons": [
     {
       "src": "icon-192.png",

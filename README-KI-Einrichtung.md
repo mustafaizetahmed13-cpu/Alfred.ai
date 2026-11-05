@@ -25,3 +25,6 @@ Der Gemini-API-Schlüssel gehört ausschließlich als Cloudflare Secret `GEMINI_
 - Die Worker-CORS-Konfiguration erlaubt die GitHub-Pages-Origin `https://mustafaizetahmed13-cpu.github.io`. Wenn du die App unter einer anderen Domain hostest, muss `worker.js` entsprechend angepasst werden.
 - Chat, Bildanalyse und Autopilot-Planung nutzen das Backend. Der Autopilot erstellt Pläne; er führt keine beliebigen externen Aktionen aus.
 - Kamera-Bilder werden nur beim Start einer Analyse an Gemini gesendet.
+
+
+Hinweis für Version 6.0: Das Gedächtnis und die Spezialistenprofile sind zunächst lokal bzw. rollenbasiert. Eine serverseitige Agenten-Orchestrierung und Memory-Synchronisierung ist noch nicht implementiert.
