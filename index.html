@@ -7,7 +7,7 @@
 <meta name="description" content="A.L.F.R.E.D. – persönlicher KI-Butler">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg">
-<title>A.L.F.R.E.D. — Ultimate Edition</title>
+<title>A.L.F.R.E.D. — FUTURE SYSTEM</title>
 <style>
 :root{--bg:#050a12;--panel:#0b1522;--panel2:#0e1d2d;--line:#17344a;--cyan:#63e6ff;--blue:#328dff;--muted:#8aa6ba;--white:#e9f7ff;--good:#63e6b2;--warn:#ffc66d;--shadow:0 12px 40px #0008}
 *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:radial-gradient(ellipse at 50% -20%,#12314a 0%,#07111e 42%,var(--bg) 75%);color:var(--white);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
@@ -40,13 +40,65 @@ textarea.field{resize:vertical;min-height:90px}.chatlog{height:48vh;min-height:2
 hr{border:0;border-top:1px solid #18374b;margin:14px 0}.toast{position:fixed;top:18px;left:50%;transform:translateX(-50%);background:#12344a;border:1px solid #45cfff;color:#e9fbff;padding:10px 15px;border-radius:12px;z-index:50;box-shadow:var(--shadow);display:none;font-size:12px}
 @media(max-width:720px){.hero{grid-template-columns:1fr .72fr;gap:2px}.reactor-wrap{min-height:180px}.span3,.span4,.span5,.span6,.span7,.span8{grid-column:span 6}.span12{grid-column:span 12}.clock{font-size:27px}}
 @media(max-width:430px){.app{padding:12px 12px 100px}.hero{grid-template-columns:1fr}.reactor-wrap{min-height:170px;grid-row:1}.hero-copy{grid-row:2}.span3,.span4,.span5,.span6,.span7,.span8{grid-column:span 12}.nav button{font-size:8px}.nav button b{font-size:17px}}
+
+/* A.L.F.R.E.D. // FUTURE INTERFACE UPGRADE */
+:root{--cyan:#73f7ff;--blue:#368dff;--panel:#071827;--line:#24708a;--shadow:0 0 28px #20cfff18,0 18px 55px #000a}
+html,body{background:#02060d;color:#e9fbff}
+body{background:radial-gradient(ellipse at 50% 12%,#0c3450 0%,#061321 34%,#02060d 76%);overflow-x:hidden}
+body:before{opacity:.23;background-size:42px 42px;mask-image:linear-gradient(#000 0%,#0009 55%,transparent 100%)}
+body:after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:repeating-linear-gradient(0deg,transparent 0 3px,#6ceeff08 4px,transparent 5px);mix-blend-mode:screen;opacity:.42}
+.app{z-index:1;max-width:1320px;padding-top:18px}
+.top{border-bottom:1px solid #55eaff4a;position:relative}
+.top:after{content:"";position:absolute;bottom:-1px;left:0;width:38%;height:1px;background:linear-gradient(90deg,var(--cyan),transparent);box-shadow:0 0 14px var(--cyan)}
+.brandmark{border-radius:50%;width:46px;height:46px;border:1px solid #79f7ff;box-shadow:0 0 12px #3ceaff88,inset 0 0 15px #3ceaff33;position:relative;animation:markPulse 3s ease-in-out infinite}
+.brandmark:after{content:"";position:absolute;inset:-6px;border:1px dashed #52cfff77;border-radius:50%;animation:spin 18s linear infinite}
+.brandname{letter-spacing:.3em;text-shadow:0 0 15px #54eaff55}.brandname small{letter-spacing:.3em}
+.status{padding:8px 11px;border:1px solid #2b8096;border-radius:3px;background:#06203299;box-shadow:inset 0 0 16px #22dfff14;font-size:9px}
+.dot{animation:dotPulse 1.8s ease-in-out infinite}
+.hero{padding:34px 0 22px;min-height:310px}
+.eyebrow{letter-spacing:.34em;text-shadow:0 0 12px #4beaff88}
+.greeting{font-weight:300;letter-spacing:.015em;text-shadow:0 0 24px #2ccfff22}.greeting span{color:#a7f8ff;text-shadow:0 0 24px #35dfff99}
+.sub{max-width:480px}
+.reactor-wrap{min-height:290px;isolation:isolate}
+.reactor{width:min(270px,65vw);filter:drop-shadow(0 0 22px #23cfff66)}
+.reactor:before{inset:2%;border:2px solid #6cf4ff9c;box-shadow:inset 0 0 35px #22dfff55,0 0 25px #22dfff55,0 0 75px #168fff33;animation:spin 24s linear infinite}
+.reactor:after{inset:12%;border:1px dashed #75caff;box-shadow:0 0 20px #168fff88;animation:spin 13s linear infinite reverse}
+.reactor-wrap:before,.reactor-wrap:after{content:"";position:absolute;border-radius:50%;pointer-events:none}
+.reactor-wrap:before{width:min(315px,78vw);aspect-ratio:1;border:1px solid #4ddcff36;clip-path:polygon(0 0,100% 0,100% 18%,0 18%,0 82%,100% 82%,100% 100%,0 100%);animation:spin 38s linear infinite}
+.reactor-wrap:after{width:min(350px,88vw);aspect-ratio:1;border:1px solid #4ddcff20;transform:rotate(45deg);clip-path:polygon(0 0,100% 0,100% 2%,0 2%,0 98%,100% 98%,100% 100%,0 100%)}
+.core{width:31%;box-shadow:0 0 18px #a4fbff,0 0 45px #16d7ff,0 0 95px #087dff;animation:corePulse 2.4s ease-in-out infinite}
+.card{position:relative;overflow:hidden;border-radius:4px 16px 4px 16px;background:linear-gradient(135deg,#0c2639ed,#061321f5 72%);border:1px solid #28627b;box-shadow:inset 0 0 25px #2acfff0b,var(--shadow);backdrop-filter:blur(14px);transition:transform .25s,border-color .25s,box-shadow .25s}
+.card:before{content:"";position:absolute;top:0;left:0;width:42px;height:2px;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}
+.card:after{content:"";position:absolute;right:0;bottom:0;width:24px;height:24px;border-right:1px solid #56eaff88;border-bottom:1px solid #56eaff88;pointer-events:none}
+.card:hover{transform:translateY(-3px);border-color:#58eaff;box-shadow:0 0 24px #22cfff22,var(--shadow)}
+.cardtitle{color:#c9f7ff;letter-spacing:.2em}.tag{border-radius:2px;border-color:#3c9bb7;background:#062b3b;color:#86f5ff;letter-spacing:.14em}
+.clock,.metric{color:#d9fbff;text-shadow:0 0 18px #3bdfff55;font-variant-numeric:tabular-nums}
+.action{border-radius:3px 10px 3px 10px;background:linear-gradient(135deg,#0c3047,#071a2b);border-color:#2c7995;letter-spacing:.04em;box-shadow:inset 0 0 12px #24cfff0a;position:relative;overflow:hidden}
+.action:before{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 20%,#8af8ff22 50%,transparent 80%);transform:translateX(-130%);transition:transform .55s}
+.action:hover:before{transform:translateX(130%)}
+.action:hover{transform:translateY(-1px);box-shadow:0 0 18px #2ddfff55;border-color:#7af5ff}
+.action.primary{background:linear-gradient(120deg,#087eaa,#164b9b 70%,#092e60);border-color:#66eaff;box-shadow:0 0 18px #159bd944,inset 0 0 15px #78eaff22}
+.field{border-radius:3px 10px 3px 10px;background:#03101d;border-color:#24566f;box-shadow:inset 0 0 18px #12bce90c}
+.field:focus{border-color:#79f7ff;box-shadow:0 0 0 1px #79f7ff55,0 0 22px #20cfff22}
+.nav{background:#020a13ed;border-top:1px solid #3d9db5;box-shadow:0 -10px 35px #0008;backdrop-filter:blur(22px)}
+.nav button{transition:.2s;letter-spacing:.08em}.nav button.active{color:#a7faff;background:linear-gradient(180deg,#12405a99,#0a1d2b);box-shadow:inset 0 0 18px #2acfff22,0 0 15px #28dfff22}.nav button.active b{text-shadow:0 0 14px #62f2ff}
+.page.active{animation:pageEnter .42s cubic-bezier(.2,.8,.2,1)}
+@keyframes pageEnter{from{opacity:0;transform:translateY(12px) scale(.992);filter:blur(3px)}to{opacity:1;transform:none;filter:blur(0)}}
+@keyframes markPulse{50%{box-shadow:0 0 22px #3ceaffaa,inset 0 0 18px #3ceaff55}}
+@keyframes dotPulse{50%{opacity:.45;box-shadow:0 0 2px var(--good)}}
+@keyframes corePulse{0%,100%{transform:scale(.94);filter:brightness(1)}50%{transform:scale(1.08);filter:brightness(1.45)}}
+.sound-toggle{border:1px solid #287b94;background:#061d2c;color:#9af7ff;border-radius:3px;padding:7px 9px;font-size:10px;letter-spacing:.1em}
+.sound-toggle[aria-pressed="false"]{opacity:.55}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+@media(max-width:430px){.reactor-wrap{min-height:195px}.reactor{width:min(230px,66vw)}.status{font-size:8px;padding:6px}}
+
 </style>
 </head>
 <body>
 <div class="app">
 <header class="top">
  <div class="brand"><div class="brandmark">A.</div><div class="brandname">A.L.F.R.E.D.<small>PERSONAL INTELLIGENCE SYSTEM</small></div></div>
- <div class="status"><i class="dot"></i><span id="systemState">SYSTEM READY</span></div>
+ <div class="row" style="justify-content:flex-end"><button class="sound-toggle" id="soundToggle" type="button" aria-pressed="true" onclick="toggleUISound()">◖ SOUND ON</button><div class="status"><i class="dot"></i><span id="systemState">SYSTEM READY</span></div></div>
 </header>
 
 <main>
@@ -92,7 +144,7 @@ hr{border:0;border-top:1px solid #18374b;margin:14px 0}.toast{position:fixed;top
  <div class="sectionhead"><div class="eyebrow">SYSTEM DIAGNOSTICS</div><h1>Systemzentrale</h1><p>Informationen, die Ihr Browser und Android freigeben.</p></div>
  <div class="grid">
   <div class="card span6"><div class="cardhead"><span class="cardtitle">Status</span><span class="tag">LIVE</span></div><div class="list"><div class="item"><span class="txt">Internetverbindung</span><b id="netStatus">—</b></div><div class="item"><span class="txt">Batteriestatus</span><b id="batteryDetail">—</b></div><div class="item"><span class="txt">Sprachausgabe</span><b id="ttsStatus">—</b></div><div class="item"><span class="txt">Spracheingabe</span><b id="sttStatus">—</b></div></div></div>
-  <div class="card span6"><div class="cardhead"><span class="cardtitle">Über A.L.F.R.E.D.</span><span class="tag">V2.0</span></div><div class="metric">ULTIMATE</div><p class="small">Persönliches Assistenzsystem. Diese Version enthält lokale Organisationswerkzeuge und eine Demo-Konversation. Für echte KI, geräteweite Steuerung und Hintergrund-Wake-Word sind zusätzliche Dienste und Android-Berechtigungen nötig.</p></div>
+  <div class="card span6"><div class="cardhead"><span class="cardtitle">Über A.L.F.R.E.D.</span><span class="tag">V3.0</span></div><div class="metric">ULTIMATE</div><p class="small">Persönliches Assistenzsystem. Diese Version enthält lokale Organisationswerkzeuge und eine Demo-Konversation. Für echte KI, geräteweite Steuerung und Hintergrund-Wake-Word sind zusätzliche Dienste und Android-Berechtigungen nötig.</p></div>
   <div class="card span12"><div class="cardhead"><span class="cardtitle">Systemaktionen</span></div><div class="row"><button class="action" onclick="loadWeather()">Wetterdaten laden</button><button class="action" onclick="testVoice()">Stimme prüfen</button><button class="action" onclick="installApp()">App installieren</button></div><p class="small" id="installHint">Wenn die App bereits installiert ist, können Sie diesen Hinweis ignorieren.</p></div>
  </div>
 </section>
@@ -157,5 +209,22 @@ function wipeData(){if(confirm('Möchten Sie alle lokalen Aufgaben, Notizen und 
 let deferredPrompt;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e});async function installApp(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt=null}else toast('Installieren Sie Alfred über das Browser-Menü, falls bereits installiert: ignorieren.')}
 loadSettings();renderTasks();renderNotes();drawSW();
 if('serviceWorker'in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
+
+// Synthesized interface sounds. Audio starts only after a user gesture; no external audio files.
+let uiSoundEnabled=localStorage.getItem('alfred_ui_sound')!=='0';let uiAudio=null;
+function syncSoundButton(){const b=$('soundToggle');if(!b)return;b.textContent=uiSoundEnabled?'◖ SOUND ON':'◖ SOUND OFF';b.setAttribute('aria-pressed',uiSoundEnabled?'true':'false')}
+function toggleUISound(){uiSoundEnabled=!uiSoundEnabled;localStorage.setItem('alfred_ui_sound',uiSoundEnabled?'1':'0');syncSoundButton();if(uiSoundEnabled)playUISound('activate')}
+function playUISound(kind='tap'){
+ if(!uiSoundEnabled)return;
+ try{const AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;if(!uiAudio)uiAudio=new AC();if(uiAudio.state==='suspended')uiAudio.resume();
+ const now=uiAudio.currentTime;const tones=kind==='activate'?[420,660,880]:kind==='page'?[520,760]:kind==='confirm'?[660,990]:[620];
+ tones.forEach((freq,i)=>{const o=uiAudio.createOscillator(),g=uiAudio.createGain();o.type='sine';o.frequency.setValueAtTime(freq,now+i*.065);o.frequency.exponentialRampToValueAtTime(freq*.78,now+i*.065+.12);g.gain.setValueAtTime(.0001,now+i*.065);g.gain.exponentialRampToValueAtTime(.035,now+i*.065+.018);g.gain.exponentialRampToValueAtTime(.0001,now+i*.065+.16);o.connect(g);g.connect(uiAudio.destination);o.start(now+i*.065);o.stop(now+i*.065+.17)});
+ }catch(e){}
+}
+document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.id==='soundToggle')return;if(b.classList.contains('primary'))playUISound('confirm');else if(b.closest('.nav')||b.dataset.page)playUISound('page');else playUISound('tap')},true);
+const originalGo=go;go=function(page){originalGo(page);playUISound('page')};
+const originalToast=toast;toast=function(msg){originalToast(msg);playUISound('confirm')};
+syncSoundButton();
+
 </script>
 </body></html>

@@ -1,18 +1,9 @@
-# A.L.F.R.E.D. 2.0 — Ultimate Edition
+# A.L.F.R.E.D. v3.0 – Future Interface
 
-## Installation / GitHub Pages
-Upload the seven files in this folder to the root of the existing GitHub repository, replacing files with the same names. Keep the repository and GitHub Pages settings unchanged.
+Futuristische HUD-Oberfläche mit holografischen Ebenen, animiertem Reaktor, Seitenübergängen und synthetischen UI-Sounds. Sound kann oben rechts ein- und ausgeschaltet werden. Sounds werden erst nach einer Nutzerinteraktion erzeugt (Browser-Sicherheitsvorgabe).
 
-## Included now
-- Responsive futuristic multi-page interface
-- Dashboard, Chat, Tasks, Notes, Tools, System, Settings
-- Local task and note storage in browser localStorage
-- German browser text-to-speech with selectable installed German voices
-- Browser speech recognition where supported
-- Clock, battery/network indicators where browser exposes them
-- Geolocation-based current weather through Open-Meteo
-- Calculator, basic offline word examples, stopwatch
-- PWA manifest and service worker with versioned cache
+## Installation / Update
+Alle Dateien im Repository durch diese Version ersetzen. Wichtig: `index.html` UND `sw.js` aktualisieren. GitHub Pages veröffentlicht danach die neue Version. Anschließend die App vollständig schließen und neu öffnen oder die Seite in Chrome neu laden.
 
-## Important limitations
-The chat is currently a local demo, not a connected AI model. For a real AI assistant, add a secure backend/serverless function and keep API keys on the server only. Never place provider API keys in this public repository or frontend JavaScript. Background wake-word listening and arbitrary Android device control are not available to an ordinary web app/PWA; those require native Android development and explicit permissions. Voice selection depends on voices installed on the device/browser.
+## Grenzen
+Die Oberfläche und Sounds sind lokal im Browser. Die Gesprächsfunktion bleibt eine Demo ohne echte Online-KI. Sprachfunktionen hängen von Android/Chrome und installierten Stimmen ab.
