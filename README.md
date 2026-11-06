@@ -22,3 +22,11 @@ Die PIN ist kein Ersatz für die Android-Bildschirmsperre. Die Notfallfunktion l
 ## Version 6.1.1
 - Stoppuhr mit Start/Pause, Runden und Zurücksetzen.
 - Live-Wetter über Open-Meteo; benötigt Internet und Standortfreigabe.
+
+
+## Version 6.2 – Scanner, Zerstörungsmodus und HUD-Uhr
+- Scanner: Live-Kamerabild, Fotoaufnahme und lokale Bilddiagnose (Auflösung/Helligkeit). Keine automatische KI-Objekterkennung ohne Vision-Backend.
+- Zerstörungsmodus: 10-Sekunden-Countdown als sichere visuelle Simulation mit Abbruch. Es werden niemals Daten gelöscht.
+- HUD-Uhr: analoge Uhr mit Sekundenzeiger und digitale Uhrzeit; Live-Wettertemperatur erscheint daneben, sobald die Wetterabfrage erfolgreich war.
+- Live-Wetter braucht Internet und eine erteilte Standortfreigabe.
+- Die Kamera benötigt HTTPS und eine explizite Browserfreigabe.
